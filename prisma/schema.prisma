@@ -2,12 +2,14 @@ generator client {
   provider = "prisma-client-js"
 }
 
+// datasource DB
 datasource db {
   provider = "mysql"
   url = env("DATABASE_URL")
   relationMode = "prisma"
 }
 
+// model profile
 model Profile {
   id String @id @default(uuid())
   userId String @unique
@@ -23,6 +25,7 @@ model Profile {
   updatedAt DateTime @updatedAt
 }
 
+// model server
 model Server {
   id String @id @default(uuid())
   name String
