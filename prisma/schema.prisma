@@ -44,12 +44,14 @@ model Server {
   @@index([profileId])
 }
 
+// enum Member
 enum MemberRole {
   ADMIN
   MODERATOR
   GUEST
 }
 
+// Member
 model Member {
   id String @id @default(uuid())
   role MemberRole @default(GUEST)
@@ -73,6 +75,8 @@ model Member {
   @@index([serverId])
 }
 
+
+// Channels
 enum ChannelType {
   TEXT
   AUDIO
@@ -99,6 +103,8 @@ model Channel {
   @@index([serverId])
 }
 
+
+// Messages
 model Message {
   id String @id @default(uuid())
   content String @db.Text
@@ -136,6 +142,8 @@ model Conversation {
   @@unique([memberOneId, memberTwoId])
 }
 
+
+// direct Messages
 model DirectMessage {
   id String @id @default(uuid())
   content String @db.Text
