@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { NavigationSidebar } from "@/components/navigation/navigation-sidebar";
 import { ServerSidebar } from "@/components/server/server-sidebar";
 
+// mobile toggle
 export const MobileToggle = ({
   serverId
 }: {
