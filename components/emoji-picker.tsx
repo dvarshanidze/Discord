@@ -11,6 +11,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 
+// emoji picker
 interface EmojiPickerProps {
   onChange: (value: string) => void;
 }
