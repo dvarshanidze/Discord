@@ -1,6 +1,6 @@
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { cn } from "@/lib/utils";
-
+// avatar
 interface UserAvatarProps {
   src?: string;
   className?: string;
