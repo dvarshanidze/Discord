@@ -1,4 +1,4 @@
-# Discord Clone
+# Discord
 
 Welcome to the **Discord Clone** repository! This project aims to replicate the core functionalities of Discord, providing a platform for voice, video, and text communication, as well as server and channel management.
 
